@@ -18,3 +18,7 @@ The programs obliges the user to enter valid integers only. And it has two algor
 
 ## What has not been tested:
 1. The function `swap_small_great` which takes two inputs and returns them as an array where the smallest value is on the second index, and the biggest value is on the first index.
+
+___
+
+![GHP6GK64xf](https://user-images.githubusercontent.com/55358999/172705797-7148f46b-073f-4abe-9c5a-cdd2196020a1.gif)
