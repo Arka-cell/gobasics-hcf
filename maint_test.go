@@ -16,6 +16,14 @@ func TestLoopHCF(t *testing.T) {
 		response := "Assertion error! Expected" + strconv.Itoa(expected) + "instead of " + strconv.Itoa(result)
 		t.Fatalf(response)
 	}
+
+	x = 12
+	y = 30
+	result = compute_highest_factor(x, y)
+	if result != expected {
+		response := "Assertion error! Expected" + strconv.Itoa(expected) + "instead of " + strconv.Itoa(result)
+		t.Fatalf(response)
+	}
 }
 
 func TestEuclideanHCF(t *testing.T) {
@@ -23,6 +31,13 @@ func TestEuclideanHCF(t *testing.T) {
 	y := 12
 	var expected int = 6
 	result := hcf_euclidean(x, y)
+	if result != expected {
+		response := "Assertion error! Expected" + strconv.Itoa(expected) + "instead of " + strconv.Itoa(result)
+		t.Fatalf(response)
+	}
+	x = 30
+	y = 12
+	result = hcf_euclidean(x, y)
 	if result != expected {
 		response := "Assertion error! Expected" + strconv.Itoa(expected) + "instead of " + strconv.Itoa(result)
 		t.Fatalf(response)
