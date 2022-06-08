@@ -11,5 +11,10 @@ The programs obliges the user to enter valid integers only. And it has two algor
 2. Open your command line and run `go test` to run your unit tests.
 
 ## What has been tested:
-1. A function that will check if an input from `fmt.Scan` is of type `int` based on the result of `fmt.Scan`
-2. 
+1. The function `check_integer` that will check if an input from `fmt.Scan` is of type `int` based on the result of `fmt.Scan`
+2. The function `hcf_euclidean` which will run the second algorithm; made sure that `x > y` and `x < y`. 
+3. The function `compute_highest_factor` which will run the first algorithm; made sure that `x > y` and `x < y`. 
+4. The function `find_smallest` that will find which integer is smallest between two inputs only.
+
+## What has not been tested:
+1. The function `swap_small_great` which takes two inputs and returns them as an array where the smallest value is on the second index, and the biggest value is on the first index.
