@@ -14,11 +14,20 @@ func check_integer(y_n int, y_err error, x_n int, x_err error) bool {
 }
 
 func find_smallest(x int, y int) int {
-
 	if x > y {
 		return y
 	} else {
 		return x
+	}
+}
+
+func swap_small_great(x int, y int) [2]int {
+	if x > y {
+		arr := [2]int{x, y}
+		return arr
+	} else {
+		arr := [2]int{y, x}
+		return arr
 	}
 }
 
@@ -34,6 +43,8 @@ func compute_highest_factor(x int, y int) int {
 }
 
 func hcf_euclidean(x int, y int) int {
+	arr := swap_small_great(x, y)
+	x, y = arr[0], arr[1]
 	for y > 0 {
 		x, y = y, x%y
 	}
