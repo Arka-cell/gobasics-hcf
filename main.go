@@ -8,27 +8,25 @@ func check_integer(y_n int, y_err error, x_n int, x_err error) bool {
 	if y_n != 1 || y_err != nil || x_n != 1 || x_err != nil {
 		fmt.Print("\nEnter Valid Integers please!\n")
 		return true
-	} else {
-		return false
 	}
+	return false
 }
 
 func find_smallest(x int, y int) int {
 	if x > y {
 		return y
-	} else {
-		return x
 	}
+	return x
+
 }
 
 func swap_small_great(x int, y int) [2]int {
 	if x > y {
 		arr := [2]int{x, y}
 		return arr
-	} else {
-		arr := [2]int{y, x}
-		return arr
 	}
+	arr := [2]int{y, x}
+	return arr
 }
 
 func compute_highest_factor(x int, y int) int {
